@@ -3,15 +3,15 @@ This is a personal implementation of the linux command du -sb with some modifica
 The commands specifies for each directory the memory occupied by it and by all the subdirectories it contains.
 
 
-#Usage
+# Usage
 This is the syntax:
-command [options] [directory...]
+command.sh [options] [directory...]
 
 
 These are the options:
- -l -> 
- -h -> if h then if there are hard links in that points to a file in the same tree with root the directory passed in input, they are counted only once.   
- -s regex (default: vuoto; nel seguito, sia s il valore dato a tale opzione).
- -S string (default: vuoto; nel seguito, sia S il valore dato a tale opzione).
- -e hexcont (default: vuoto; nel seguito, sia e il valore dato a tale opzione).
+- -l -> if l then if there are soft links the size of the pointed file will be counted, otherwise tha actual size of the soft link file will be counted.
+- -h -> if h then if there are hard links in that points to a file in the same tree with root the directory passed in input, they are counted only once.   
+- -s regex (default: empty) -> if s then only directories or files whose name matches with the regex will be counted
+- -S string (default: empty) -> if S then only files whose text contains a substring that matches the string will be counted
+- -e hexcont (default: empty) -> if e then only files whose hexadecimal dump contains a substring that matches the regular expression will be counted
 
