@@ -1,5 +1,5 @@
 # Implementation of a linux command
-This is a personal implementation of the linux command du -sb with some modifications, this is essentially an exercise in style.
+This is a personal implementation of the linux command du -sb with some modifications, this is essentially an exercise in style, done as a homework during my bachelor degree.
 The commands specifies for each directory the memory occupied by it and by all the subdirectories it contains.
 
 
